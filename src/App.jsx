@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./components/Navbar/Navabr";
+import Header from "./components/Header/Header";
 import HeroSection from "./components/HeroSection/HeroSection";
 import AnimeList from "./components/AnimeList/AnimeList";
 import Footer from "./components/Footer/Footer";
@@ -22,8 +22,8 @@ const sampleAnimes = [
 function App() {
   return (
     <Router>
-      <div className="bg-black min-h-screen">
-        <Navbar />
+      <div className="bg-black min-h-screen overflow-x-hidden">
+        <Header />
         <HeroSection />
         <Routes>
           <Route path="/" element={<AnimeList animes={sampleAnimes} />} />
