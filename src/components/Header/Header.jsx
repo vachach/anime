@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import AuthModal from "../Auth/AuthModal";
 
 const Header = () => {
   const [isMobileSearchVisible, setIsMobileSearchVisible] = useState(false);
@@ -13,6 +14,11 @@ const Header = () => {
       setIsMobileSearchVisible(false);
     }
   };
+
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
+  const openModal = () => setIsModalOpen(true)
+  const closeModal = () => setIsModalOpen(false)
 
   useEffect(() => {
     if (isMobileSearchVisible) {
@@ -61,22 +67,21 @@ const Header = () => {
         </form>
 
         {/* Sign in and Mobile Search */}
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center ">
           {/* Mobile search icon */}
-          <button className="md:hidden text-xl" onClick={toggleMobileSearch}>
+          <button className="md:hidden text-xl px-4" onClick={toggleMobileSearch}>
             <i className="fas fa-search"></i>
           </button>
 
           {/* Sign in button */}
           <button
             className="bg-purple-600 hover:bg-purple-700 px-4 py-3 rounded text-sm font-medium"
-            onClick={() => {
-              // open login modal
-              alert("Open login modal");
-            }}
+            onClick={openModal}
           >
             Sign in
           </button>
+
+          <AuthModal isOpen={isModalOpen} onClose={closeModal}/>
         </div>
       </div>
 
