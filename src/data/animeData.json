@@ -1,0 +1,66 @@
+[
+  {
+    "title": "Naruto",
+    "image": "/animes/naruto.jpg",
+    "href": "naruto",
+    "videoLinks": [
+      {"title": "Episode 1", "url": "https://youtu.be/PeMeT9Yct2o?si=jfrgL9eTNTH1fttF"},
+      {"title": "Episode 2", "url": "https://www.youtube.com/watch?v=GDuI9G_UKcM"}
+    ]
+  },
+  {
+    "title": "One Piece",
+    "image": "/animes/onepiece.jpg",
+    "href": "onepiece"
+  },
+  {
+    "title": "Attack on Titan",
+    "image": "/animes/aot.jpg",
+    "href": "aot"
+  },
+  {
+    "title": "Demon Slayer",
+    "image": "/animes/demonslayer.jpg",
+    "href": "demonslayer"
+  },
+  {
+    "title": "Your Name",
+    "image": "/animes/yourname.jpg",
+    "href": "yourname"
+  },
+  {
+    "title": "Frieren: Beyond Journey's End",
+    "image": "/animes/frieren.jpg",
+    "href": "frieren"
+  },
+  {
+    "title": "Fullmetal Alchemist",
+    "image": "/animes/fullmetal.jpg",
+    "href": "fullmetalalchemist"
+  },
+  {
+    "title": "My Hero Academia",
+    "image": "/animes/heroaca.jpg",
+    "href": "mha"
+  },
+  {
+    "title": "Gintama",
+    "image": "/animes/gintama.jpg",
+    "href": "gintama"
+  },
+  {
+    "title": "Hunter x Hunter",
+    "image": "/animes/hxh.jpg",
+    "href": "hxh"
+  },
+  {
+    "title": "Haikyu!!",
+    "image": "/animes/haikyu.jpg",
+    "href": "haikyu"
+  },
+  {
+    "title": "Solo Leveling",
+    "image": "/animes/sololevel.png",
+    "href": "sololeveling"
+  }
+]
